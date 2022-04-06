@@ -13,12 +13,12 @@ Welcome to the game Hangman \n
 
 
  """)
-# number of attempts (randomly)
+#max number of attempts
 MAX_TRIES = 6
 
 print(HANGMAN_ASCII_ART, "\n", MAX_TRIES)
 
-#The hangman input from the gamer
+#gamer answer input
 letter_answer = input("Guess a letter: ")
 print("Your answer is: ", letter_answer)
 
