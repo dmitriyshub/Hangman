@@ -1,7 +1,7 @@
-import random
-#the Hangman welcome page
-print("Welcome to the game Hangman")
-print(""" 
+# the Hangman welcome page
+
+HANGMAN_ASCII_ART = ("""
+Welcome to the game Hangman \n
   _    _                                         
  | |  | |                                        
  | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
@@ -9,14 +9,14 @@ print("""
  | |  | | (_| | | | | (_| | | | | | | (_| | | | |
  |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
                       __/ |                      
-                     |___/
- 
- 
+                     |___/  \n
+
+
  """)
 # number of attempts (randomly)
-randomNumber = random.randint(5, 10)
-print(randomNumber)
+MAX_TRIES = 6
 
+print(HANGMAN_ASCII_ART, "\n", MAX_TRIES)
 
 #the Hangman pictures
 
