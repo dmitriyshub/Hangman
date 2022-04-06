@@ -1,7 +1,7 @@
 # the Hangman welcome page
 
 HANGMAN_ASCII_ART = ("""
-Welcome to the game Hangman \n
+  Welcome to the Hangman Game! \n
   _    _                                         
  | |  | |                                        
  | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
@@ -16,11 +16,11 @@ Welcome to the game Hangman \n
 #max number of attempts
 MAX_TRIES = 6
 
-print(HANGMAN_ASCII_ART, "\n", MAX_TRIES)
+print(HANGMAN_ASCII_ART, "Max tries: ", MAX_TRIES)
 
 #gamer answer input
-letter_answer = input("Guess a letter: ")
-print("Your answer is: ", letter_answer)
+letter_answer = input("  Guess a letter please: ")
+print("  Your answer is: ", letter_answer)
 
 
 
