@@ -18,6 +18,12 @@ MAX_TRIES = 6
 
 print(HANGMAN_ASCII_ART, "\n", MAX_TRIES)
 
+#The hangman input from the gamer
+letter_answer = input("Guess a letter: ")
+print("Your answer is: ", letter_answer)
+
+
+
 #the Hangman pictures
 
 print("picture 1:")
