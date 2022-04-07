@@ -23,3 +23,9 @@ letter_answer = input("  Guess a letter please: ")
 letter_answer = letter_answer.lower()
 print("  Your answer is: ", letter_answer)
 
+#building a game table
+word_answer = input("Please enter a word:  ")
+
+word_len =len(word_answer)
+print("_ " * word_len)
+
