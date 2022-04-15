@@ -1,4 +1,25 @@
-"""
+
+#the final answer
+temp = input('enter the temperature: ').upper() # upper method makes the letters in UPPER case
+if temp[-1:] == 'C':
+    # checks if Temperature is in Celsius format and reverse to farenheit
+    farenheit = (float(temp[:-1]) * 9) / 5 + 32
+    print(farenheit,"F")
+elif temp[-1:] == 'F':
+    # checks if Temperature is in Farenheit format
+    celsius = (float(temp[:-1]) - 32 )/ 1.8
+    print(celsius,"C")
+else:
+    # wrong input
+    print("Wrong Input")
+
+
+
+
+
+
+""" others attempts:
+1:
 degree = input("Enter temperature in celsius or farenheit: ")
 temperature_type = str(degree[-1])
 print(temperature_type)
@@ -24,7 +45,9 @@ if 'c' or 'C' in temperature_type:
 
 
 
-"""temp = input("Input the  temperature you like to convert? (e.g., 45F, 102C etc.) : ")
+"""
+2:
+temp = input("Input the  temperature you like to convert? (e.g., 45F, 102C etc.) : ")
 degree = float(temp[:-1])
 i_convention = temp[-1]
 i_convention = i_convention.upper()
@@ -42,12 +65,3 @@ print(result,o_convention)"""
 
 
 
-temp = input('enter the temperature: ').upper()
-if temp[-1:] == 'C':
-    farenheit = (float(temp[:-1]) * 9) / 5 + 32
-    print(farenheit,"F")
-elif temp[-1:] == 'F':
-    celsius = (float(temp[:-1]) - 32 )/ 1.8
-    print(celsius,"C")
-else:
-    print("Wrong value")
