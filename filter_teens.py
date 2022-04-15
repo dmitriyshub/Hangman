@@ -1,5 +1,12 @@
+# the final answer
 def filter_teens(a = 13, b = 13, c = 13):
+    """
 
+    :param a: children 1 age
+    :param b: children 2 age
+    :param c: children 3 age
+    :return:
+    """
     return fix_age(a) + fix_age(b) + fix_age(c)
 
 
@@ -11,7 +18,8 @@ def fix_age(age):
         return age
 
 
-"""sum = 0
+"""another 
+sum = 0
 def filter_teens(a = 13,b = 13,c = 13):
     age_list = [a,b,c]
     new_age_list = []
