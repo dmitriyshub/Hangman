@@ -9,4 +9,18 @@ def is_valid_input(letter_guessed):
     b. False if letter_guessed contains a special symbol (*,& ...)
     c. True if the str is contain letter in english
     """
-    return
+
+    if letter_guessed.isalpha() == False and len(letter_guessed) > 1:
+        return False
+    elif letter_guessed.isalpha() == False:
+        return False
+    elif len(letter_guessed) > 1:
+        return False
+    elif letter_guessed.isalpha() == True and len(letter_guessed) == 1:
+        return True
+
+def main():
+    print(is_valid_input("a"))
+
+if __name__ == "__main__":
+    main()
