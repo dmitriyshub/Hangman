@@ -21,7 +21,6 @@ def targil():
     power = True
 
     while power == True:
-        print(user_list)
         user_number = int(input("Please press a number from 1 - 9: "))
         answer3 = ""
         answer4 = ""
@@ -59,13 +58,11 @@ def targil():
         elif user_number == 7:
             invalid_list = []
             for i in user_list:
-
-                if len(i) < 3 and i.isalpha() != True:
+                condition = i.isalpha()
+                element_length = len(i)
+                if condition == False or element_length < 3:
                     invalid_list.append(i)
-                elif len(i) < 3:
-                    invalid_list.append(i)
-                elif i.isalpha() == False:
-                    invalid_list.append(i)
+            print("invalid items in list: ")
             print(invalid_list)
 
         elif user_number == 8:
