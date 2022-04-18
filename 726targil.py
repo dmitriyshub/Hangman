@@ -7,8 +7,8 @@
 4: count the item in list
 5: remove item from list
 6: adding item to list
-7:
-8:
+7:print all the wrong items
+8: remove all duplicates from list
 9: Exit
 
 """
@@ -21,6 +21,7 @@ def targil():
     power = True
 
     while power == True:
+        print(user_list)
         user_number = int(input("Please press a number from 1 - 9: "))
         answer3 = ""
         answer4 = ""
@@ -54,6 +55,22 @@ def targil():
         elif user_number == 6:
             answer6 = input("add item to your list: ")
             user_list.append(answer6)
+
+        elif user_number == 7:
+            invalid_list = []
+            for i in user_list:
+
+                if len(i) < 3 and i.isalpha() != True:
+                    invalid_list.append(i)
+                elif len(i) < 3:
+                    invalid_list.append(i)
+                elif i.isalpha() == False:
+                    invalid_list.append(i)
+            print(invalid_list)
+
+        elif user_number == 8:
+             user_list = set(user_list)
+             print("Your new list:", user_list)
 
 
         elif user_number == 9:
