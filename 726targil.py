@@ -38,9 +38,9 @@ def targil():
             answer3 = input("Find item in list: ")
 
             if answer3 in user_list:
-                print(answer3, "is in list")
+                print(True)
             else:
-                print("The item not in list!")
+                print(False)
 
         elif user_number == 4:
             answer4 = input("Count specific item: ")
@@ -74,8 +74,11 @@ def targil():
             print("Goodbay!")
             power = False
 
-targil()
+def main():
+    targil()
 
+if __name__ == "__main__":
+    main()
 
 
 
