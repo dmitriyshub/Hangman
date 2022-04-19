@@ -12,13 +12,13 @@ def show_hidden_word(secret_word, old_letters_guessed):
     for i in secret_word:
 
         if i in old_letters_guessed:
-            temp_list[counter] = ' ' + i + ' '
+            temp_list[counter] = ' ' + i
             counter += 1
         elif i not in old_letters_guessed:
-            temp_list[counter] = ' _ '
+            temp_list[counter] = ' _'
             counter += 1
     game_desk = "".join(temp_list)
-    game_desk = game_desk[1:-1]
+    game_desk = game_desk[1:]
     return game_desk
 
 
