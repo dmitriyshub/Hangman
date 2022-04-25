@@ -7,17 +7,20 @@ def are_files_equal(file1, file2):
     '''
     file1_open = open(file1, "r")
     file2_open = open(file2, "r")
-    file1_read = file1_open.read()
-    file2_read = file2_open.read()
 
-    for line1 in file1_read:
-        for line2 in file2_read:
-            if line1 != line2:
+
+    for line1 in file1_open:
+        for line2 in file2_open:
+            if line1 == line2:
+                continue
+            elif line1 != line2:
+                file1_open.close()
+                file2_open.close()
                 return False
-            elif line1 == line2:
-                pass
+    file1_open.close()
+    file2_open.close()
+    return True
 
-        return True
 
 def main():
     print(are_files_equal("d:\\file1.txt", "d:\\file2.txt"))
